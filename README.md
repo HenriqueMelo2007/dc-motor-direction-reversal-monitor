@@ -1,19 +1,24 @@
-# Title
+# DC MOTOR DIRECTION REVERSAL MONITOR
 
-![Project Preview](assets/preview.jpg)
+![Project Preview](assets/preview.png)
+
+## [SCHEMATIC VIEW HERE!](assets/schematic.pdf)
 
 ## Project Description
 
-Description here! lorem ipsum dolor 
+This project, developed using the Tinkercad simulator, implements a motor control system with the following components: Arduino Uno, breadboard, LCD display, two DC motors, a 9-volt battery (powering the motors), an H-bridge L293D integrated circuit, and necessary connections. The L293D is employed to control the motors, rotating them in a clockwise direction for 2 seconds before reversing their direction to counterclockwise for another 2 seconds. Simultaneously, the Arduino controls the LCD display, which shows the current rotation direction of the motors as the sequence progresses.
+
+The provided code utilizes the LiquidCrystal library to control an LCD display. It begins by initializing the LCD with the specified pins and setting up the output pins in the setup() function. The loop() function continuously executes the motor control and display sequence. It first clears the LCD and sets the digital pins to control the motors in a counterclockwise direction, displaying "Counterclockwise" on the LCD for 2 seconds. After this delay, the LCD is cleared again, and the motor direction is switched to clockwise, with the message "Clockwise" displayed for another 2 seconds. This cycle repeats indefinitely, allowing for continuous motor movement in alternating directions while providing visual feedback on the LCD.
 
 ## Components
 
-- Arduino Uno
-- 
-- 
-- 
-- 
-
+- ( 1 ) Arduino Uno
+- ( 1 ) Breadboard
+- ( 1 ) 9-volt battery
+- ( 1 ) H-bridge L293D
+- ( 1 ) LCD display
+- ( 2 ) DC motor
+- ( 1 ) 200Ω Resistor
 
 > Project Status: concluded
 
@@ -45,7 +50,7 @@ To clone this repository to your local machine, follow these steps:
 2. **Clone Repository**: Use the following command to clone the repository:
 
    ```bash
-   git clone https://github.com/yourusername/your-repository-name.git
+   git clone https://github.com/HenriqueMelo2007/dc-motor-direction-reversal-monitor.git
 
 
 ## License
